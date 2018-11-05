@@ -1,0 +1,56 @@
+\documentclass{stacs_cw}
+\begin{document}
+\matrno{108828917}
+\title{CS6001 LaTeX Template Demo}
+\author{Andrew Wong}
+\date{November 2018}
+\maketitle
+\tableofcontents
+\newpage
+\section{Section 1}
+\subsection{Subsection 1}
+
+\subsection{Subsection 2}
+
+\section{Code}
+This is a code \code{variable}.
+
+\subsection{SQL}
+
+\begin{lstlisting}[language=sql]
+SELECT column1, column2....columnN
+FROM   table_name
+WHERE  column_name BETWEEN val-1 AND val-2;
+\end{lstlisting}
+
+\subsection{Python}
+\begin{lstlisting}[language=python]
+def main():
+	print("Hello World!")
+
+if __name__ == "__main__":
+	main()
+\end{lstlisting}
+
+\subsection{Java}
+\begin{lstlisting}[language=Java]
+class FibonacciExample2 {
+	static int n1 = 0, n2 = 1, n3 = 0;
+	static void printFibonacci(int count) {
+		if (count > 0) {
+		n3 = n1 + n2;
+		n1 = n2;
+		n2 = n3;
+		System.out.print(" " + n3);
+		printFibonacci(count - 1);
+		}
+	}
+	public static void main(String args[]) {
+		int count = 10;
+		System.out.print(n1 + " " + n2); //printing 0 and 1    
+		printFibonacci(count - 2); //n-2 because 2 numbers are already printed   
+	}
+}
+\end{lstlisting}
+\end{document}
+
